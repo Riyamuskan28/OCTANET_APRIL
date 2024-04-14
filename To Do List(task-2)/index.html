@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="To Do List.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>To Do List</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1> To Do List <i class='bx bxs-edit' style='color: white'  ></i></h1>
+        <div class="input-container">
+            <input type="text" class="mission" id="input-box" placeholder="Add a new Mission....">
+            <button class="btn" onclick="addTask()">
+                <i class='bx bxs-plus-circle' style='color:rgb(12, 218, 12);' ></i>
+            </button>
+    </div>
+    <div class="list">
+        <ul id="tasks">
+           
+   
+        </ul>
+       
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

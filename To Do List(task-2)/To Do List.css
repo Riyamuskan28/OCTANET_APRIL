@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(103leff26t671.webp);
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+.container{
+ width: 400px;
+ padding: 30px;
+ background: transparent;
+ border: 2px solid #e6b7eca1;
+ border-radius: 16px;
+ backdrop-filter: blur(10px);
+}
+h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 40px;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.mission{
+    flex: 1;
+    outline: none;
+    padding: 10px 10px 10px 20px ;
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: #eee;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.mission:hover{
+    color: #bfbfbf;
+}
+.btn{
+    border: none;
+    outline: none;
+    background: white;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+}
+.btn:hover{
+    box-shadow: 0px 0px 5px #e6b7eca1,
+0 0 25px #e6b7eca1,
+0 0 50px #e6b7eca1,
+0 0 25px #e6b7eca1,
+0 0 100px #e6b7eca1,
+0 0 200px #e6b7eca1;
+}
+
+img{
+    max-width: 70%;
+    margin: 55px auto 0;
+    display: block;
+}
+ul li{
+    list-style: none;
+    font-size: 19px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    color: paleturquoise;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Target-Logo-1968.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+.checked{
+color: rgb(15, 235, 15);
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(R.png);
+
+}
+ul li span{
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: white;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+}
+ul li span:hover{
+background: #e7b7eca1;
+}
+::placeholder{
+color: white;
+opacity: 1;
+}
